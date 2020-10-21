@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>Pikadu</title>
 </head>
+
 <body>
   <header class="header">
     <div class="container">
@@ -13,40 +15,134 @@
         <a href="/" class="header-logo">
           <img src="img/header/logo.svg" alt="logo: Pikadu" class="header-logo-image">
         </a>
-      <!-- /.header-logo -->  
+        <!-- /.header-logo -->
 
-      <nav class="navbar header__navbar">
-        <ul class="navbar__list">
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Свежее</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Лучшее</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Горячее</a>
-          </li>
-          <li class="navbar__item">
-            <a href="#" class="navbar__link">Подписки</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.navbar header__navbar -->
+        <nav class="navbar header__navbar">
+          <ul class="navbar__list">
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Свежее</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Лучшее</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Горячее</a>
+            </li>
+            <li class="navbar__item">
+              <a href="#" class="navbar__link">Подписки</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.navbar header__navbar -->
 
-      <div class="search navbar__search">
-        <input type="search" class="search__input" placeholder="Поиск по сайту">
-        <button class="search__button">
-          <img src="img/header/search-icon.svg" alt="icon: search" class="search__icon">
-        </button>
+        <div class="search header__search">
+          <input type="search" class="search__input" placeholder="Поиск по сайту">
+          <button class="search__button">
+            <img src="img/header/search-icon.svg" alt="icon: search" class="search__icon">
+          </button>
+        </div>
+        <!-- /.search navbar__search -->
+
       </div>
-      <!-- /.search navbar__search -->
-
-     </div>
       <!-- /.header__wrapper -->
     </div>
     <!-- /.container -->
   </header>
   <!-- /.navbar -->
-  
+
+  <div class="content">
+    <main class="posts">
+      <section class="post">
+        <div class="post-body">
+          <h2 class="post__title">Заголовок поста с интригой</h2>
+          <p class="post__text">
+            Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако
+            забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками
+            в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом
+            способствует подготовки и реализации новых предложений. Равным образом новая модель организационной
+            деятельности позволяет оценить значение модели развития.
+          </p>
+          <p class="post__text">
+            Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако
+            забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками
+            в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом
+            способствует подготовки и реализации новых предложений. Равным образом новая модель организационной
+            деятельности позволяет оценить значение модели развития.
+          </p>
+          <p class="post__text">
+            Таким образом укрепление и развитие структуры требуют от нас анализа форм развития. Не следует, однако
+            забывать, что реализация намеченных плановых заданий требуют от нас анализа позиций, занимаемых участниками
+            в отношении поставленных задач. Задача организации, в особенности же консультация с широким активом
+            способствует подготовки и реализации новых предложений. Равным образом новая модель организационной
+            деятельности позволяет оценить значение модели развития.
+          </p>
+          <div class="tags post__tags">
+            <a href="#" class="tags__item">#свежее</a>
+            <a href="#" class="tags__item">#горячее</a>
+            <a href="#" class="tags__item">#мое</a>
+            <a href="#" class="tags__item">#случайность</a>
+          </div>
+          <!-- /.posts__tags -->
+        </div>
+        <!-- /.post-body -->
+
+        <div class="post-footer">
+          <div class="buttons post__buttons">
+
+            <button class="post-footer__button">
+              <svg width="19" height="20" class="icon icon-like">
+                <use xlink:href="img/icons.svg#like"></use>
+              </svg>
+              <span class="like-count">26</span>
+            </button>
+
+            <button class="post-footer__button">
+              <svg width="21" height="21" class="icon icon-comment">
+                <use xlink:href="img/icons.svg#comment"></use>
+              </svg>
+              <span class="comment-count">157</span>
+            </button>
+
+            <button class="post-footer__button">
+              <svg width="19" height="19" class="icon icon-save">
+                <use xlink:href="img/icons.svg#save"></use>
+              </svg>
+            </button>
+
+            <button class="post-footer__button">
+              <svg width="17" height="19" class="icon icon-share">
+                <use xlink:href="img/icons.svg#share"></use>
+              </svg>
+            </button>
+
+          </div>
+          <!-- /.buttons post__buttons -->
+
+
+          <div class="author post__author">
+            <div class="author__text">
+              <a href="#" class="author__name">arteislamov</a>
+              <span class="author__visittime">5 минут назад</span>
+            </div>
+            <div class="author__avatar-wrap">
+              <img src="img/posts/avatar.jpg" alt="avatar: Post Avatar" class="author__avatar">
+            </div>
+          </div>
+          <!-- /.author post__author -->
+        </div>
+        <!-- /.post-footer -->
+      </section>
+      <!-- /.post -->
+    </main>
+    <!-- /.posts -->
+
+    <aside class="side-bar">
+
+    </aside>
+    <!-- /.side-bar -->
+  </div>
+  <!-- /.content -->
+
 </body>
+
 </html>
