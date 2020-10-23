@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -359,6 +360,7 @@ template {
 
 body {
   font-family: 'SF Pro Display', sans-serif;
+  font-style: normal;
   font-size: 14px;
   background-color: #E5E5E5;
 }
@@ -458,13 +460,20 @@ input:focus {
 }
 
 .content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
   max-width: 1200px;
   width: 92%;
   margin: auto;
 }
 
+.posts {
+  width: 67%;
+}
+
 .post {
-  max-width: 800px;
+  margin-bottom: 30px;
 }
 
 .post-body {
@@ -580,5 +589,187 @@ input:focus {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.sidebar {
+  width: 31%;
+}
+
+.sidebar__user {
+  padding: 15px 25px;
+}
+
+.sidebar-nav {
+  background-color: #FFFFFF;
+  border: 1px solid #E8E8E8;
+}
+
+.sidebar-nav--mb-2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-nav__menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar-nav__link {
+  display: inline-block;
+  padding: 16px 48px;
+  width: 100%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #595959;
+}
+
+.sidebar-nav__link:hover {
+  background-color: #FFFBE6;
+}
+
+.sidebar-nav__link--active {
+  border-right: 3px solid #FAAD14;
+  background-color: #FFFBE6;
+}
+
+.sidebar__card {
+  margin-bottom: 20px;
+}
+
+.user {
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #E8E8E8;
+  border-right: 1px solid #E8E8E8;
+  border-left: 1px solid #E8E8E8;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user__image-wrap {
+  margin-right: 17px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user__avatar {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.user__name {
+  display: inline-block;
+  margin-right: auto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #595959;
+}
+
+.user__icon {
+  width: 20px;
+  height: 20px;
+  fill: #000000;
+}
+
+.button {
+  padding: 13px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  background-color: #FAAD14;
+  border-radius: 4px;
+  color: #FFFFFF;
+}
+
+.button-new-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 100%§;
+}
+
+.icon-fire {
+  margin-right: 10px;
+  width: 11px;
+  height: 14px;
+  fill: #FFFFFF;
+}
+
+.card {
+  border: 1px solid #E8E8E8;
+}
+
+.card__title {
+  margin: 0;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.card-head {
+  padding: 23px 25px;
+  background-color: #FAFAFA;
+  border-bottom: 1px solid #E8E8E8;
+}
+
+.card-body {
+  padding: 22px 40px 30px 25px;
+  background-color: #FFFFFF;
+}
+
+.card-body__title {
+  display: inline-block;
+  margin: 0 0 10px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #D48806;
+}
+
+.card-body__text {
+  margin: 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #262626;
+}
+
+.promo {
+  position: relative;
+  display: block;
+  width: 368px;
+  height: 261px;
+  background: #FFFFFF url(../img/sidebar/promo-image.jpg) no-repeat center center/cover;
+  border: 1px solid #E8E8E8;
+}
+
+.promo::before {
+  content: 'Реклама';
+  position: absolute;
+  background-color: #C4C4C4;
+  padding: 0 26px;
+  top: 0;
+  right: 0;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #FFFFFF;
 }
 /*# sourceMappingURL=style.css.map */
