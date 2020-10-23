@@ -43,6 +43,12 @@
         </div>
         <!-- /.search navbar__search -->
 
+        <button class="mobile-button header__mobile-button">
+          <span class="mobile-button__line"></span>
+          <span class="mobile-button__line"></span>
+          <span class="mobile-button__line"></span>
+        </button>
+        <!-- /.mobile-button header__mobile-button -->
       </div>
       <!-- /.header__wrapper -->
     </div>
@@ -219,48 +225,51 @@
     <!-- /.posts -->
 
     <aside class="sidebar">
-      <div class="user sidebar__user">
-        <a href="#" class="user-info">
-          <div class="user__image-wrap">
-            <img src="img/sidebar/avatar.jpg" alt="image: avatar" class="user__avatar">
-          </div>
-          <a href="#" class="user__name">islamovartem</a>
-        </a>
-        <!-- /.user-info -->
-        <a href="#" class="user__link">
-          <svg class="user__icon">
-            <use xlink:href="img/icons.svg#exit"></use>
-          </svg>
-        </a>
-      </div>
-      <!-- /.user sidebar__user -->
+      <div class="sidebar-menu sidebar-menu--mb-2">
+        <div class="user sidebar__user">
+          <a href="#" class="user-info">
+            <div class="user__image-wrap">
+              <img src="img/sidebar/avatar.jpg" alt="image: avatar" class="user__avatar">
+            </div>
+            <a href="#" class="user__name">islamovartem</a>
+          </a>
+          <!-- /.user-info -->
+          <a href="#" class="user__link">
+            <svg class="user__icon">
+              <use xlink:href="img/icons.svg#exit"></use>
+            </svg>
+          </a>
+        </div>
+        <!-- /.user sidebar__user -->
 
-      <nav class="sidebar-nav sidebar-nav--mb-2">
-        <ul class="sidebar-nav__menu">
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link sidebar-nav__link--active">Ответы</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Комментарии</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Оценки</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Сохраненное</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Подписки</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Заметки</a>
-          </li>
-          <li class="sidebar-nav__item">
-            <a href="#" class="sidebar-nav__link">Игнор-лист</a>
-          </li>
-        </ul>
-      </nav>
-      <!-- /.siderbar-nav -->
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav__menu">
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link sidebar-nav__link--active">Ответы</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Комментарии</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Оценки</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Сохраненное</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Подписки</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Заметки</a>
+            </li>
+            <li class="sidebar-nav__item">
+              <a href="#" class="sidebar-nav__link">Игнор-лист</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- /.siderbar-nav -->
+      </div>
+      <!-- /.sidebar-menu -->
 
       <a href="#" class="button button-new-post">
         <svg class="icon-fire">
@@ -297,6 +306,8 @@
   </div>
   <!-- /.content -->
 
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
